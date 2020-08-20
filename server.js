@@ -5,7 +5,7 @@ const express = require('express'),
     server = http.createServer(app),
     port = process.env.PORT || 4000;
 
-const myKey = '6d6c9d15e325744870e572a9d7b7b4f9'; 
+const myKey = ''; 
 // url to current weather stats
 const proxy = `https://api.openweathermap.org/data/2.5/weather?`;
 // url to 5 day forecast weather stats
