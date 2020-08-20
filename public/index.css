@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: -webkit-linear-gradient( rgb(48 68 78),rgb(5, 133, 172), rgb(4, 99, 128));
+    background-image: -moz-linear-gradient(rgb(48 68 78), rgb(5, 133, 172), rgb(4, 99, 128));
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+/* section container for weather information */
+.main-weather-grid{
+    width: 99%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: auto;
+}
+
+.weather-display{
+    width: 100%;
+    display: none;
+    grid-template-columns: 50% 50%;
+    border-style: solid;
+    border-radius: 1em;
+}
+/* section containing description of weather */ 
+.weather-description{
+    background-color: white;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+/* section with stats of the day */
+.stats-of-day{
+    display: none;
+    text-align: center;
+    background-color: white;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+}
+/*  section containing daily forecast */
+.daily-forecast{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* styles weather gif and degrees */
+.degree-img{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    font-size: 40px;
+    grid-template-rows: 10% 10% 60% 10% 10%;
+}
+.degree-img img{
+    width: 100px;
+    height: 100px;
+}
+
+/* wheater search section */
+.weather-search{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weather-search label{
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.weather-search input{
+   width: auto;
+   font-size: 30px;
+}
+
+.weather-search select{
+    width: auto;
+    font-size: 30px;
+}
+
+.weather-search button{
+    font-size: 30px;
+    width: auto;
+    margin: 1em;
+}
+
+/* shows next upcoming days */
+.forecast{
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: none;
+    border-radius: 1em;
+}
+
+.nextDays{
+    width: auto;
+    padding: 1em;
+    height: auto;
+    display: inline-block;
+    border-style: solid;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    color:white;
+}
+
+.nextDays img{
+    height: 100px;
+    width: 100px;
+}
+
+@media only screen and (min-width: 600px) and (max-width:800px){
+    body{
+        justify-content: center;
+    }
+    .weather-search{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+    }
+    .weather-search button{
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 801px){
+    body{
+        justify-content: center;
+    }
+    .weather-search{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+    .weather-search button{
+        font-size: auto;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-height: 800px){
+    .forecast{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 620px){
+    html{
+        background-color: rgb(4, 99, 128);
+        background-image: none;
+    }
+}

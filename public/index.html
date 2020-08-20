@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewpoirt' content='width=device-width, intitial-scale=1.0'>
+        <link rel='stylesheet' href='./index.css'>
+        <title> Weather Host </title>
+    </head>
+    <body>
+        <section class='main-weather-grid'>
+
+            <section class='weather-display'>
+
+                <section class='weather-description'>
+                    <h2 id='cityName'> </h2>
+                    <div id='currentTime'> </div>
+                    <div class='degree-img'>
+                        <div id='degrees' class='currDegree'> </div>
+                        <img id='weather-img' class='myWeather' src='' alt="weather gif"/>
+                    </div>
+                    <div id='feel'> </div>
+                    <div id='dayType'> </div>
+                </section>
+    
+                <section class='stats-of-day'>
+                    <div> Stats of Day </div>
+                    <div id='max_temp'> Max Temp: </div>
+                    <div id='min_temp'> Min Temp: </div>
+                    <div id='humidity'> Humidity: </div>
+                    <div id='pressure'> Pressure: </div>
+                    <div id='wind'> Wind: 5 m/s</div>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section class='weather-search'>
+            <label for='name'> city: <input id='name'> </input> </label>
+            <label for='state'> state: <select id='state'>  </select> </label>
+            <button id='search-btn' type='submit'> Search </button>
+        </section>
+    
+        <section class='forecast'>
+            <h4 style='margin-left:1%'> Weekly Forecast </h4>
+            <div class='nextDays'> 
+                <div id='day1'> </div>
+                <div id='time1'> </div>
+                <div id='max_temp1'> </div>
+                <div id='min_temp1'> </div>
+                <div id='humidity1'> </div>
+                <div id='describe1'> </div>
+                <img id='img1' src='' alt='gif' />
+
+
+            </div>
+            <div class='nextDays'> 
+                <div id='day2'> </div>
+                <div id='time2'> </div>
+                <div id='max_temp2'> </div>
+                <div id='min_temp2'> </div>
+                <div id='humidity2'> </div>
+                <div id='describe2'> </div>
+                <img id='img2' src='' alt='gif' />
+
+            </div>
+            <div class='nextDays'> 
+                <div id='day3'> </div>
+                <div id='time3'> </div>
+                <div id='max_temp3'> </div>
+                <div id='min_temp3'> </div>
+                <div id='humidity3'> </div>
+                <div id='describe3'> </div>
+                <img id='img3' src='' alt='gif' />
+
+            </div>
+            <div class='nextDays'> 
+                <div id='day4'> </div>
+                <div id='time4'> </div>
+                <div id='max_temp4'> </div>
+                <div id='min_temp4'> </div>
+                <div id='humidity4'> </div>
+                <div id='describe4'> </div>
+                <img id='img4' src='' alt='gif' />
+
+            </div>
+            <div class='nextDays'> 
+                <div id='day5'> </div>
+                <div id='time5'> </div>
+                <div id='max_temp5'> </div>
+                <div id='min_temp5'> </div>
+                <div id='humidity5'> </div>
+                <div id='describe5'> </div>
+                <img id='img5' src='' alt='icon of weather image' />
+
+            </div>
+        </section>
+    </body>
+    <script src='./index.js'></script>
+</html>
